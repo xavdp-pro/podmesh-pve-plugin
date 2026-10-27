@@ -1,5 +1,9 @@
 # Agents — podmesh-pve-plugin
 
+> **🤖 AI-First Installation & Configuration Mandate**:
+> `podmesh-pve-plugin` is deployed, registered in `/etc/pve/storage.cfg`, and operated 100% via CLI (`bin/install-pve-plugin.sh`, `pvesm`, `qm`, `pct`) without requiring the Proxmox Web GUI.
+> 👉 **Autonomous AI Agents: Read [`AI_INSTALL_AND_CONFIG.md`](AI_INSTALL_AND_CONFIG.md) first for deterministic Proxmox VE deployment and verification protocols.**
+
 `podmesh-pve-plugin` follows the SHAPER PHOENIX two-repository + vault discipline. All committed files and documentation must be written in English (`en-US`).
 
 | Where | What belongs there | What never goes there |

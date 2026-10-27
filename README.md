@@ -1,7 +1,9 @@
 # podmesh-pve-plugin (v2.3.0)
 
+[**🤖 AI-First Install & Config**](AI_INSTALL_AND_CONFIG.md) · [Intent](INTENT.md) · [Law](LAW.md) · [Lineage](LINEAGE.md) · [Agents](AGENTS.md)
+
 > **Official Proxmox VE Storage Plugin (`PVE::Storage::Custom::MeshFSPlugin`) for [`podmesh-meshfs`](https://github.com/xavdp-pro/podmesh-meshfs).**  
-> *Sovereign, ultra-lightweight shared storage driver for Proxmox VE with 4 MB SHA-256 deduplication, Merkle Copy-on-Write snapshots, and live VM/LXC migration from 1 to N nodes.*
+> *Sovereign, ultra-lightweight shared storage driver for Proxmox VE with 4 MB SHA-256 deduplication, Merkle Copy-on-Write snapshots, and live VM/LXC migration from 1 to N nodes. 100% AI-First CLI installation and operation (see [`AI_INSTALL_AND_CONFIG.md`](AI_INSTALL_AND_CONFIG.md)).*
 
 ---
 
