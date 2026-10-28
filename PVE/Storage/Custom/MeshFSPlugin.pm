@@ -125,7 +125,7 @@ sub meshfs_api_request {
     my $url    = "http://${server}:${port}${endpoint}";
 
     my $ua = LWP::UserAgent->new(timeout => 5);
-    $ua->agent("PVE-Storage-MeshFS/2.3.0");
+    $ua->agent("PVE-Storage-MeshFS/2.4.0");
 
     my $req = HTTP::Request->new($method => $url);
     $req->header('Content-Type' => 'application/json');

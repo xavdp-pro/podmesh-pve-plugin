@@ -1,9 +1,9 @@
-# podmesh-pve-plugin (v2.3.0)
+# podmesh-pve-plugin (v2.4.0)
 
 [**🤖 AI-First Install & Config**](AI_INSTALL_AND_CONFIG.md) · [Intent](INTENT.md) · [Law](LAW.md) · [Lineage](LINEAGE.md) · [Agents](AGENTS.md)
 
 > **Official Proxmox VE Storage Plugin (`PVE::Storage::Custom::MeshFSPlugin`) for [`podmesh-meshfs`](https://github.com/xavdp-pro/podmesh-meshfs).**  
-> *Sovereign, ultra-lightweight shared storage driver for Proxmox VE with 4 MB SHA-256 deduplication, Merkle Copy-on-Write snapshots, and live VM/LXC migration from 1 to N nodes. 100% AI-First CLI installation and operation (see [`AI_INSTALL_AND_CONFIG.md`](AI_INSTALL_AND_CONFIG.md)).*
+> *Sovereign, ultra-lightweight shared storage driver for Proxmox VE. Transitioning from the experimental v2.3.0 demonstrator into v2.4.0 universal multi-storage architecture (Proxmox VE + TrueNAS + Synology + Windows + Podman), with atomic chunk reception, FastCDC / BLAKE3, Merkle Copy-on-Write snapshots, and WireGuard Dual-Hub live VM/LXC migration without SPOF. 100% AI-First CLI installation and operation (see [`AI_INSTALL_AND_CONFIG.md`](AI_INSTALL_AND_CONFIG.md)).*
 
 ---
 
@@ -47,7 +47,7 @@ In Proxmox VE virtualization clusters, shared distributed storage typically reli
 +----------+-----------------------------------------------+--------+
                                    |
            +-----------------------+-----------------------+
-           |         podmesh-meshfs Daemon (v2.3.0)        |
+           |         podmesh-meshfs Daemon (v2.4.0)        |
            |          (meshfs.service on port 7443)        |
            +-----------------------------------------------+
 ```
@@ -58,7 +58,7 @@ In Proxmox VE virtualization clusters, shared distributed storage typically reli
 | :--- | :--- |
 | `PVE/Storage/Custom/MeshFSPlugin.pm` | Proxmox VE Perl storage driver (`type => 'meshfs'`, `APIVER => 16` + dynamic `PVE::Storage::APIVER()`) |
 | `bin/install-pve-plugin.sh` | Automated 1-click installer and `/etc/pve/storage.cfg` configurator |
-| `packaging/build-deb-pve-plugin.sh` | Debian package builder (`podmesh-pve-plugin_2.3.0_all.deb`) |
+| `packaging/build-deb-pve-plugin.sh` | Debian package builder (`podmesh-pve-plugin_2.4.0_all.deb`) |
 
 ---
 
@@ -95,7 +95,7 @@ sudo ./bin/install-pve-plugin.sh --storage-id meshfs --server 127.0.0.1 --port 7
 
 ```bash
 ./packaging/build-deb-pve-plugin.sh
-sudo dpkg -i dist/podmesh-pve-plugin_2.3.0_all.deb
+sudo dpkg -i dist/podmesh-pve-plugin_2.4.0_all.deb
 ```
 
 ### Option C: `/etc/pve/storage.cfg` Declaration

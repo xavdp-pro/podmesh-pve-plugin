@@ -1,0 +1,8 @@
+{
+  "name": "podmesh-pve-plugin",
+  "version": "2.4.0",
+  "description": "Proxmox VE Storage Plugin for PodMesh MeshFS (v2.4.0 Universal Multi-Storage Architecture)",
+  "author": "Xavier DP <xavier@xavdp.pro>",
+  "homepage": "https://meshfs.xavdp.pro",
+  "license": "AGPL-3.0-or-later"
+}

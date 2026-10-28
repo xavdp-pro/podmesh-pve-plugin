@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# PodMesh Proxmox VE Storage Plugin v2.3.0 — Debian 13 / PVE 9.x Builder
+# PodMesh Proxmox VE Storage Plugin v2.4.0 — Debian 13 / PVE 9.x Builder
 # Hardened under Claude Fable 5.1 & GPT-6 Astra Counter-Reviews:
 #  - Enforces 0755 on ./ and all structural directories (fixes mktemp -d 0700 bug)
 #  - Reversible postinst / prerm / postrm for PVE daemon reload
@@ -10,7 +10,7 @@ set -euo pipefail
 umask 0022
 
 PKG_NAME="podmesh-pve-plugin"
-PKG_VERSION="2.3.0"
+PKG_VERSION="2.4.0"
 PKG_ARCH="all"
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD_DIR="$(mktemp -d /tmp/build-${PKG_NAME}.XXXXXX)"
@@ -43,10 +43,10 @@ Priority: optional
 Architecture: ${PKG_ARCH}
 Installed-Size: ${INSTALLED_SIZE}
 Depends: perl, libwww-perl, libjson-perl
-Recommends: podmesh-meshfs (>= 2.3.0)
+Recommends: podmesh-meshfs (>= 2.4.0)
 Maintainer: Xavier DP <xavier@xavdp.pro>
 Homepage: https://meshfs.xavdp.pro
-Description: Proxmox VE Storage Plugin for PodMesh MeshFS (v2.3.0)
+Description: Proxmox VE Storage Plugin for PodMesh MeshFS (v2.4.0)
  Official Proxmox VE storage driver (PVE::Storage::Custom::MeshFSPlugin)
  providing native KVM/QEMU and LXC storage integration, Merkle Copy-on-Write
  snapshots, and shared live-migration over PodMesh MeshFS 4MB CAS storage.
@@ -62,7 +62,7 @@ if [ "${1:-}" = "configure" ]; then
         if command -v systemctl >/dev/null 2>&1 && [ -d /run/systemd/system ]; then
             systemctl try-reload-or-restart pvedaemon pveproxy pvestatd 2>/dev/null || true
         fi
-        echo "[podmesh-pve-plugin] Registered PVE::Storage::Custom::MeshFSPlugin (v2.3.0) and reloaded Proxmox VE daemons."
+        echo "[podmesh-pve-plugin] Registered PVE::Storage::Custom::MeshFSPlugin (v2.4.0) and reloaded Proxmox VE daemons."
     fi
 fi
 exit 0
