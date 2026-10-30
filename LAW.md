@@ -1,6 +1,6 @@
 # Law — podmesh-pve-plugin
 
-The following architectural invariants govern `podmesh-pve-plugin` (v2.3.0):
+The following architectural invariants govern `podmesh-pve-plugin` (v2.4.1):
 
 ## 1. Strict `PVE::Storage::Plugin` Contract Compliance
 - `PVE::Storage::Custom::MeshFSPlugin` must inherit cleanly from `PVE::Storage::Plugin` and dynamically report `PVE::Storage::APIVER()` (with fallback to `APIVER => 16`) so Proxmox VE upgrades never break storage registration.

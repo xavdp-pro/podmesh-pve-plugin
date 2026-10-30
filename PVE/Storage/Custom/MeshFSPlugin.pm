@@ -1,8 +1,8 @@
 package PVE::Storage::Custom::MeshFSPlugin;
 
 # =============================================================================
-# PodMesh MeshFS — Plugin de Stockage Officiel Proxmox VE
-# Système de fichiers distribué, souverain, avec déduplication SHA-256
+# PodMesh MeshFS — Plugin de Stockage Officiel Proxmox VE (v2.4.1)
+# Système de fichiers distribué, souverain, avec déduplication CAS BLAKE3
 # et snapshots d'arbres de Merkle Copy-on-Write (Alternative légère à CephFS)
 # =============================================================================
 

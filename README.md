@@ -1,9 +1,9 @@
-# podmesh-pve-plugin (v2.4.0)
+# podmesh-pve-plugin (v2.4.1)
 
 [**🤖 AI-First Install & Config**](AI_INSTALL_AND_CONFIG.md) · [Intent](INTENT.md) · [Law](LAW.md) · [Lineage](LINEAGE.md) · [Agents](AGENTS.md)
 
 > **Official Proxmox VE Storage Plugin (`PVE::Storage::Custom::MeshFSPlugin`) for [`podmesh-meshfs`](https://github.com/xavdp-pro/podmesh-meshfs).**  
-> *Sovereign, ultra-lightweight shared storage driver for Proxmox VE. Transitioning from the experimental v2.3.0 demonstrator into v2.4.0 universal multi-storage architecture (Proxmox VE + TrueNAS + Synology + Windows + Podman), with atomic chunk reception, FastCDC / BLAKE3, Merkle Copy-on-Write snapshots, and WireGuard Dual-Hub live VM/LXC migration without SPOF. 100% AI-First CLI installation and operation (see [`AI_INSTALL_AND_CONFIG.md`](AI_INSTALL_AND_CONFIG.md)).*
+> *Sovereign, ultra-lightweight shared storage driver for Proxmox VE. Transitioning from the experimental v2.4.1 demonstrator into v2.4.1 universal multi-storage architecture (Proxmox VE + TrueNAS + Synology + Windows + Podman), with atomic chunk reception, FastCDC / BLAKE3, Merkle Copy-on-Write snapshots, and WireGuard Dual-Hub live VM/LXC migration without SPOF. 100% AI-First CLI installation and operation (see [`AI_INSTALL_AND_CONFIG.md`](AI_INSTALL_AND_CONFIG.md)).*
 
 ---
 
@@ -47,7 +47,7 @@ In Proxmox VE virtualization clusters, shared distributed storage typically reli
 +----------+-----------------------------------------------+--------+
                                    |
            +-----------------------+-----------------------+
-           |         podmesh-meshfs Daemon (v2.4.0)        |
+           |         podmesh-meshfs Daemon (v2.4.1)        |
            |          (meshfs.service on port 7443)        |
            +-----------------------------------------------+
 ```
