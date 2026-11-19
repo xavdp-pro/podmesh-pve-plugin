@@ -144,3 +144,7 @@ qm migrate 100 pve2 --online
 ## License
 
 Licensed under the Apache License, Version 2.0. See [`LICENSE`](LICENSE) for details.
+
+## Work with Xavier de Poorter
+
+I design and build infrastructure, custom applications and SaaS products. If you’re starting a project or need help with an existing system, email me directly at [xavier@xavdp.pro](mailto:xavier@xavdp.pro). A few lines about what you want to build or improve are enough. [Explore my work](https://xavdp.pro/).
